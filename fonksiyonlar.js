@@ -1,4 +1,4 @@
-var fonksiyonum =function () {
+var fonksiyonum = function () {
     return "fonksiyondan geldim";
 }
 
