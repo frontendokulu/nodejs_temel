@@ -63,14 +63,20 @@ getUser()
 // sıralamayı kendi yapıyor sen sadece sırasına göre yazıyorsun. mükkemmeellle
 
 async function asenkronIslemler() {
-    console.log("işlemler başladı");
-    const user = await getUser();
-    console.log("user işlemleri bitti");
+    try{
+        console.log("işlemler başladı");
+        const user = await getUser();
+        console.log("user işlemleri bitti");
 
-    console.log("articles işlemleri başladı");
-    const articles = await getArticles(user.id);
-    console.log("articles işlemleri bitti");
-    console.log(user);
-    console.log(articles);
+        console.log("articles işlemleri başladı");
+        const articles = await getArticles(user.id);
+        console.log("articles işlemleri bitti");
+
+        console.log(user, articles);
+    }
+    catch (e) {
+        console.log(e);
+    }
+
 }
 asenkronIslemler();
