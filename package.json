@@ -10,9 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.9.9",
-    "nodemailer": "^6.4.6",
-    "slugify": "^1.4.0",
-    "underscore": "^1.10.2"
+    "slugify": "^1.4.0"
   }
 }
