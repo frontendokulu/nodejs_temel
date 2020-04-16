@@ -4,12 +4,34 @@ html
     body
         | Merhaba Pug
         br
-
+        - var ulke = "Norveç"
+        - var baskent = 'Oslo'
         span(style="color:white; background-color:black")
             | Finally it works.
         br
         | Directory work is mest up, but i solve it at last
         br
         =yetenek
+        //burası açıklama satırıdır
         br
+        =ulke.toUpperCase()
+        br
+        |Başkent : #{baskent.toUpperCase()}
+        br
+
         | Merhaba #{isim}
+        include footer
+            hr
+            - var sayi =0 ;
+
+            if (sayi > 0)
+                |sayi pozitif
+                br
+                |valla pozitif
+            else if (sayi < 0)
+                |sayı negatif
+            else
+                | sayı sıfırdır
+
+                hr
+                include iteration
