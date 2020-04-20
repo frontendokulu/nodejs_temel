@@ -20,6 +20,7 @@ const BookSchema = new Schema({
        votes : Number,
        favs : Number
    },
+   category :String,
    publishedAt : {
        type:Date,
        default: Date.now()
